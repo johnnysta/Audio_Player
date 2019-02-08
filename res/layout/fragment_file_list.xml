@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="FileListerFragment"
+    android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/header"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+
+                 android:layout_gravity="center">
+
+        <TableRow
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#c0c0c0"
+            >
+
+            <Button
+                android:id="@+id/titleBtn"
+                style="android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+
+                android:layout_weight=".3"
+
+                android:background="#c0c0c0"
+                android:gravity="center"
+                android:text="Title"
+                android:textAllCaps="false"
+               >
+            </Button>
+
+
+            <Button
+                android:id="@+id/albumBtn"
+                style="android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="4dp"
+
+                android:layout_weight=".3"
+
+                android:background="#c0c0c0"
+                android:gravity="center"
+                android:text="Album"
+                android:textAllCaps="false"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/artistBtn"
+                style="android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginRight="4dp"
+
+                android:layout_weight=".3"
+
+                android:background="#c0c0c0"
+                android:gravity="center"
+                android:text="Artist"
+                android:textAllCaps="false"
+                >
+            </Button>
+
+            <CheckBox
+                android:id="@+id/allSelector"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".1"
+
+                android:gravity="right"
+
+                android:text="@null"
+                android:translationX="12dp"
+                >
+            </CheckBox>
+
+            <!--            <Button
+                android:layout_column="3"
+                android:padding="10sp"
+                android:gravity="start"
+                android:text="Duration"
+                android:textStyle="bold"
+                android:background="#c0c0c0"
+                android:textAllCaps="false"
+
+                style="android:attr/buttonBarButtonStyle"
+                >
+            </Button>-->
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:layout_alignParentBottom="false"
+        >
+    </ListView>
+
+
+    <TableLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center">
+
+        <TableRow
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#c0c0c0"
+            >
+
+            <Button
+                android:id="@+id/toPlayListButton"
+                style="android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+
+                android:layout_weight="1"
+
+                android:background="#c0c0c0"
+                android:gravity="center"
+                android:text="Add selection to play list"
+                android:textAllCaps="false"
+                >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

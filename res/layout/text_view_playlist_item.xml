@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:textColor="#FFF"
+    android:stretchColumns="4">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/text_view_playlist_item_item"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:background="#000000"
+          android:textSize="@dimen/list_text_size"
+
+          android:paddingLeft="1dp"
+          android:paddingRight="1dp"
+          android:minHeight="@dimen/list_item_height"
+          android:textColor="#FFF"
+          android:gravity="left"/>
+
+    <ImageButton
+        android:id="@+id/buttonMoveItemUp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_action_collapse"
+        android:gravity="right"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonMoveItemDown"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_action_expand"
+        android:gravity="right"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonRemoveItem"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_action_discard"
+        android:gravity="right"
+        />
+    </TableRow>
+</TableLayout>

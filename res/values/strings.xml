@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Audio Player</string>
+    <string name="tab_text_1">Play List</string>
+    <string name="tab_text_2">Music Selection</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="mnuOpenDialog">Browse audio files to create play list</string>
+    <string name="mnuOpenPlayList">Open play list</string>
+    <string name="mnuSavePlayList">Save current play list</string>
+    <string name="mnuSettings">Further settings</string>
+    <string name="mnuExit">Exit &amp; stop service</string>
+
+    <string name="icPrev">Previous track</string>
+    <string name="icPlay">Play</string>
+    <string name="icPause">Pause</string>
+    <string name="icNext">Next track</string>
+
+    <string name="icRepeat">Repeat playlist at end</string>
+</resources>

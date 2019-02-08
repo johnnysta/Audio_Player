@@ -1,0 +1,62 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="hu.example.jani.layouttest.MainActivity">
+
+    <item
+        android:id="@+id/icRepeat"
+        android:icon="@drawable/ic_action_repeat"
+        android:title="@string/icRepeat"
+        android:checkable="true"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/icPrev"
+        android:icon="@drawable/ic_action_previous"
+        android:title="@string/icPrev"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icPlay"
+        android:icon="@drawable/ic_action_play"
+        android:title="@string/icPlay"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icPause"
+        android:icon="@drawable/ic_action_pause"
+        android:title="@string/icPause"
+        android:visible="false"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icNext"
+        android:icon="@drawable/ic_action_next"
+        android:title="@string/icNext"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/mnuOpenPlayList"
+        android:orderInCategory="200"
+        android:title="@string/mnuOpenPlayList"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/mnuSavePlayList"
+        android:orderInCategory="300"
+        android:title="@string/mnuSavePlayList"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/mnuSettings"
+        android:orderInCategory="400"
+        android:title="@string/mnuSettings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/mnuExit"
+        android:orderInCategory="500"
+        android:title="@string/mnuExit"
+        app:showAsAction="never"/>
+</menu>
